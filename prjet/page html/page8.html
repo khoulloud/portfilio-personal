@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz HTML et CSS</title>
+    <link rel="stylesheet" href="C:\Users\khoul\OneDrive - North American Private University\Bureau\khouloud 1G.Informatique\programmation web\prjet\css\.css">
+  </head>
+  <body>
+    <header>
+        <h1> 
+            Quiz
+            </h1>
+
+    </header>
+    <section>
+        <div class="section">
+            <div class="quiz">
+    Q1. Que signifie HTML ?<br>
+<input type="radio" name="question1" id="correct1"> Hyper Text Markup Language<br>
+<input type="radio" name="question1"> Home Tool Markup Language<br>
+<input type="radio" name="question1"> Hyperlinks and Text Markup Language <br>
+</div>
+<div class="quiz1">
+Q2. Who is making the Web standards?<br>
+<input type="radio" name="question2" >Microsoft <br>
+<input type="radio" name="question2"> google<br>
+<input type="radio" name="question2" id="correct2">The World Wide Web Consortium  <br>
+<input type="radio" name="question2">Mozilla <br>
+</div>
+<div class="quiz2">
+Q3. Choose the correct HTML element for the largest heading:<br>
+<input type="radio" name="question3" > 'h6' <br>
+<input type="radio" name="question3"id="correct3">'h1' <br>
+<input type="radio" name="question3">heading <br>
+<input type="radio" name="question3">head <br>
+</div>
+<div class="quiz3">
+Q4. What is the correct HTML element for inserting a line break?<br>
+<input type="radio" name="question1" id="correct4">br <br>
+<input type="radio" name="question1">break <br>
+<input type="radio" name="question1"> lb<br>
+</div>
+<div class="quiz4">
+Q5. Choose the correct HTML element to define important text <br>
+<input type="radio" name="question1" id="correct5">strong <br>
+<input type="radio" name="question1">important<br>
+<input type="radio" name="question1">i <br>
+<input type="radio" name="question1">b <br>
+</div>
+Q6. Which character is used to indicate an end tag?<br>
+<input type="radio" name="question1" id="correct6">/ <br>
+<input type="radio" name="question1">* <br>
+<input type="radio" name="question1">// <br>
+Q7. Inline elements are normally displayed without starting a new line.<br>
+<input type="radio" name="question1" id="correct7">True <br>
+<input type="radio" name="question1">False <br>
+Q8. How can you make a numbered list?<br>
+<input type="radio" name="question1" id="correct8">ol <br>
+<input type="radio" name="question1">list<br>
+<input type="radio" name="question1">dl <br>
+<input type="radio" name="question1">ul <br>
+
+Q9. Which HTML tag is used to define an internal style sheet?<br>
+<input type="radio" name="question1" id="correct9">style <br>
+<input type="radio" name="question1">css <br>
+<input type="radio" name="question1">script <br>
+Q10. Which HTML attribute is used to define inline styles?<br>
+<input type="radio" name="question1" id="correct10">style<br>
+<input type="radio" name="question1">class<br>
+<input type="radio" name="question1">styles<br>
+<input type="radio" name="question1">font <br>
+
+
+
+
+
+
+
+
+<input type="submit" name="submit" value="SubmitQuiz" onClick="result()">
+<script type="text/javascript">
+    function result()
+    {
+        var score=0;
+        if(document.getElementById('correct1').checked)
+            {	score++;
+            }
+        if(document.getElementById('correct2').checked)
+            {	score++;
+            }
+        if(document.getElementById('correct3').checked)
+            {	score++;
+            }
+         if(document.getElementById('correct4').checked)
+            {	score++;
+            }
+        if(document.getElementById('correct5').checked)
+            {	score++;
+            }    
+        if(document.getElementById('correct6').checked)
+            {	score++;
+            } 
+        if(document.getElementById('correct7').checked)
+            {	score++;
+            }    
+        if(document.getElementById('correct8').checked)
+            {	score++;
+            }  
+        if(document.getElementById('correct9').checked)
+            {	score++;
+            } 
+        if(document.getElementById('correct10').checked)
+            {	score++;
+            }        
+     alert("Your score is:"+score);
+     // to print on browser
+     // document.write("Your score is:"+score);
+    }
+    </script>
+</div>
+</section>
+  </body>
+</html>
